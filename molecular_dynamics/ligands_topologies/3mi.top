@@ -1,0 +1,26 @@
+#include "/home/ugo/Scrivania/Transthyretin/molecular_dynamics/charmm36-jul2022.ff/forcefield.itp"
+
+; additional params for the molecule
+#include "3mi.prm"
+
+#include "3mi.itp"
+
+#include "/home/ugo/Scrivania/Transthyretin/molecular_dynamics/charmm36-jul2022.ff/tip3p.itp"
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct		 fcx		fcy		   fcz
+   1	1		1000	   1000		  1000
+#endif
+
+; Include topology for ions
+#include "/home/ugo/Scrivania/Transthyretin/molecular_dynamics/charmm36-jul2022.ff/ions.itp"
+
+[ system ]
+; Name
+mol
+
+[ molecules ]
+; Compound		  #mols
+3MI			1
+

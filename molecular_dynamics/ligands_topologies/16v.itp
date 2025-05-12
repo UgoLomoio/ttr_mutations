@@ -1,0 +1,335 @@
+; Created by cgenff_charmm2gmx.py
+
+[ moleculetype ]
+; Name			   nrexcl
+16V				 3
+
+[ atoms ]
+;	 nr		  type	resnr residue  atom   cgnr	   charge		mass  typeB    chargeB		massB
+; residue	 1 16V rtp 16V q	qsum
+     1      OG2D1      1    16V     O1      1     -0.432     15.999   ;
+     2      CG2O2      1    16V     C1      2      0.456     12.011   ;
+     3      OG311      1    16V     O2      3     -0.516     15.999   ;
+     4     CG2R61      1    16V     C2      4      0.090     12.011   ;
+     5     CG2R61      1    16V     C3      5     -0.168     12.011   ;
+     6     CG2R61      1    16V     C4      6     -0.161     12.011   ;
+     7     CG2R61      1    16V     C5      7     -0.075     12.011   ;
+     8     CG2R66      1    16V     C6      8      0.084     12.011   ;
+     9       FGR1      1    16V      F      9     -0.161     18.998   ;
+    10     CG2R61      1    16V     C7     10      0.268     12.011   ;
+    11      OG301      1    16V     O3     11     -0.393     15.999   ;
+    12      CG321      1    16V     C8     12     -0.013     12.011   ;
+    13      CG321      1    16V     C9     13     -0.184     12.011   ;
+    14      CG321      1    16V    C10     14     -0.196     12.011   ;
+    15     CG2R51      1    16V    C11     15     -0.064     12.011   ;
+    16     CG2R51      1    16V    C12     16     -0.152     12.011   ;
+    17      CG331      1    16V    C13     17     -0.104     12.011   ;
+    18     NG2R51      1    16V     N1     18     -0.059     14.007   ;
+    19     NG2R50      1    16V     N2     19     -0.520     14.007   ;
+    20     CG2R52      1    16V    C14     20      0.364     12.011   ;
+    21      CG331      1    16V    C15     21     -0.298     12.011   ;
+    22       HGP1      1    16V     H1     22      0.430      1.008   ;
+    23      HGR61      1    16V     H2     23      0.115      1.008   ;
+    24      HGR61      1    16V     H3     24      0.115      1.008   ;
+    25      HGR62      1    16V     H4     25      0.177      1.008   ;
+    26       HGA2      1    16V     H5     26      0.090      1.008   ;
+    27       HGA2      1    16V     H6     27      0.090      1.008   ;
+    28       HGA2      1    16V     H7     28      0.090      1.008   ;
+    29       HGA2      1    16V     H8     29      0.090      1.008   ;
+    30       HGA2      1    16V     H9     30      0.090      1.008   ;
+    31       HGA2      1    16V    H10     31      0.090      1.008   ;
+    32       HGA3      1    16V    H11     32      0.090      1.008   ;
+    33       HGA3      1    16V    H12     33      0.090      1.008   ;
+    34       HGA3      1    16V    H13     34      0.090      1.008   ;
+    35       HGP1      1    16V    H14     35      0.317      1.008   ;
+    36       HGA3      1    16V    H15     36      0.090      1.008   ;
+    37       HGA3      1    16V    H16     37      0.090      1.008   ;
+    38       HGA3      1    16V    H17     38      0.090      1.008   ;
+
+[ bonds ]
+;	ai	  aj funct			  c0			c1			  c2			c3
+    1     2	 1 ;       OG2D1      CG2O2
+    2     3	 1 ;       CG2O2      OG311
+    2     4	 1 ;       CG2O2     CG2R61
+    3    22	 1 ;       OG311       HGP1
+    4     6	 1 ;      CG2R61     CG2R61
+    4     5	 1 ;      CG2R61     CG2R61
+    5    23	 1 ;      CG2R61      HGR61
+    5    10	 1 ;      CG2R61     CG2R61
+    6    24	 1 ;      CG2R61      HGR61
+    6     7	 1 ;      CG2R61     CG2R61
+    7    25	 1 ;      CG2R61      HGR62
+    7     8	 1 ;      CG2R61     CG2R66
+    8     9	 1 ;      CG2R66       FGR1
+    8    10	 1 ;      CG2R66     CG2R61
+   10    11	 1 ;      CG2R61      OG301
+   11    12	 1 ;       OG301      CG321
+   12    26	 1 ;       CG321       HGA2
+   12    27	 1 ;       CG321       HGA2
+   12    13	 1 ;       CG321      CG321
+   13    28	 1 ;       CG321       HGA2
+   13    29	 1 ;       CG321       HGA2
+   13    14	 1 ;       CG321      CG321
+   14    30	 1 ;       CG321       HGA2
+   14    31	 1 ;       CG321       HGA2
+   14    15	 1 ;       CG321     CG2R51
+   15    16	 1 ;      CG2R51     CG2R51
+   15    20	 1 ;      CG2R51     CG2R52
+   16    17	 1 ;      CG2R51      CG331
+   16    18	 1 ;      CG2R51     NG2R51
+   17    32	 1 ;       CG331       HGA3
+   17    33	 1 ;       CG331       HGA3
+   17    34	 1 ;       CG331       HGA3
+   18    35	 1 ;      NG2R51       HGP1
+   18    19	 1 ;      NG2R51     NG2R50
+   19    20	 1 ;      NG2R50     CG2R52
+   20    21	 1 ;      CG2R52      CG331
+   21    36	 1 ;       CG331       HGA3
+   21    37	 1 ;       CG331       HGA3
+   21    38	 1 ;       CG331       HGA3
+
+[ pairs ]
+;	ai	  aj funct			  c0			c1			  c2			c3
+    1    22	 1
+    1     6	 1
+    1     5	 1
+    2    24	 1
+    2     7	 1
+    2    23	 1
+    2    10	 1
+    3     6	 1
+    3     5	 1
+    4    22	 1
+    4     8	 1
+    4    11	 1
+    4    25	 1
+    5    24	 1
+    5     7	 1
+    5     9	 1
+    5    12	 1
+    6    23	 1
+    6    10	 1
+    6     9	 1
+    7    11	 1
+    8    23	 1
+    8    24	 1
+    8    12	 1
+    9    25	 1
+    9    11	 1
+   10    25	 1
+   10    26	 1
+   10    27	 1
+   10    13	 1
+   11    23	 1
+   11    28	 1
+   11    29	 1
+   11    14	 1
+   12    30	 1
+   12    31	 1
+   12    15	 1
+   13    16	 1
+   13    20	 1
+   14    26	 1
+   14    27	 1
+   14    17	 1
+   14    18	 1
+   14    19	 1
+   14    21	 1
+   15    28	 1
+   15    29	 1
+   15    32	 1
+   15    33	 1
+   15    34	 1
+   15    35	 1
+   15    36	 1
+   15    37	 1
+   15    38	 1
+   16    30	 1
+   16    31	 1
+   16    21	 1
+   17    20	 1
+   17    35	 1
+   17    19	 1
+   18    32	 1
+   18    33	 1
+   18    34	 1
+   18    21	 1
+   19    36	 1
+   19    37	 1
+   19    38	 1
+   20    30	 1
+   20    31	 1
+   20    35	 1
+   24    25	 1
+   26    28	 1
+   26    29	 1
+   27    28	 1
+   27    29	 1
+   28    30	 1
+   28    31	 1
+   29    30	 1
+   29    31	 1
+
+[ angles ]
+;	ai	  aj	ak funct			c0			  c1			c2			  c3
+    1     2     3	5 ;      OG2D1      CG2O2      OG311
+    1     2     4	5 ;      OG2D1      CG2O2     CG2R61
+    3     2     4	5 ;      OG311      CG2O2     CG2R61
+    2     3    22	5 ;      CG2O2      OG311       HGP1
+    6     4     2	5 ;     CG2R61     CG2R61      CG2O2
+    6     4     5	5 ;     CG2R61     CG2R61     CG2R61
+    2     4     5	5 ;      CG2O2     CG2R61     CG2R61
+    4     5    23	5 ;     CG2R61     CG2R61      HGR61
+    4     5    10	5 ;     CG2R61     CG2R61     CG2R61
+   23     5    10	5 ;      HGR61     CG2R61     CG2R61
+    4     6    24	5 ;     CG2R61     CG2R61      HGR61
+    4     6     7	5 ;     CG2R61     CG2R61     CG2R61
+   24     6     7	5 ;      HGR61     CG2R61     CG2R61
+    6     7    25	5 ;     CG2R61     CG2R61      HGR62
+    6     7     8	5 ;     CG2R61     CG2R61     CG2R66
+   25     7     8	5 ;      HGR62     CG2R61     CG2R66
+    7     8     9	5 ;     CG2R61     CG2R66       FGR1
+    7     8    10	5 ;     CG2R61     CG2R66     CG2R61
+    9     8    10	5 ;       FGR1     CG2R66     CG2R61
+    8    10     5	5 ;     CG2R66     CG2R61     CG2R61
+    8    10    11	5 ;     CG2R66     CG2R61      OG301
+    5    10    11	5 ;     CG2R61     CG2R61      OG301
+   10    11    12	5 ;     CG2R61      OG301      CG321
+   11    12    26	5 ;      OG301      CG321       HGA2
+   11    12    27	5 ;      OG301      CG321       HGA2
+   11    12    13	5 ;      OG301      CG321      CG321
+   26    12    27	5 ;       HGA2      CG321       HGA2
+   26    12    13	5 ;       HGA2      CG321      CG321
+   27    12    13	5 ;       HGA2      CG321      CG321
+   12    13    28	5 ;      CG321      CG321       HGA2
+   12    13    29	5 ;      CG321      CG321       HGA2
+   12    13    14	5 ;      CG321      CG321      CG321
+   28    13    29	5 ;       HGA2      CG321       HGA2
+   28    13    14	5 ;       HGA2      CG321      CG321
+   29    13    14	5 ;       HGA2      CG321      CG321
+   13    14    30	5 ;      CG321      CG321       HGA2
+   13    14    31	5 ;      CG321      CG321       HGA2
+   13    14    15	5 ;      CG321      CG321     CG2R51
+   30    14    31	5 ;       HGA2      CG321       HGA2
+   30    14    15	5 ;       HGA2      CG321     CG2R51
+   31    14    15	5 ;       HGA2      CG321     CG2R51
+   14    15    16	5 ;      CG321     CG2R51     CG2R51
+   14    15    20	5 ;      CG321     CG2R51     CG2R52
+   16    15    20	5 ;     CG2R51     CG2R51     CG2R52
+   17    16    15	5 ;      CG331     CG2R51     CG2R51
+   17    16    18	5 ;      CG331     CG2R51     NG2R51
+   15    16    18	5 ;     CG2R51     CG2R51     NG2R51
+   16    17    32	5 ;     CG2R51      CG331       HGA3
+   16    17    33	5 ;     CG2R51      CG331       HGA3
+   16    17    34	5 ;     CG2R51      CG331       HGA3
+   32    17    33	5 ;       HGA3      CG331       HGA3
+   32    17    34	5 ;       HGA3      CG331       HGA3
+   33    17    34	5 ;       HGA3      CG331       HGA3
+   16    18    35	5 ;     CG2R51     NG2R51       HGP1
+   16    18    19	5 ;     CG2R51     NG2R51     NG2R50
+   35    18    19	5 ;       HGP1     NG2R51     NG2R50
+   18    19    20	5 ;     NG2R51     NG2R50     CG2R52
+   19    20    21	5 ;     NG2R50     CG2R52      CG331
+   19    20    15	5 ;     NG2R50     CG2R52     CG2R51
+   21    20    15	5 ;      CG331     CG2R52     CG2R51
+   20    21    36	5 ;     CG2R52      CG331       HGA3
+   20    21    37	5 ;     CG2R52      CG331       HGA3
+   20    21    38	5 ;     CG2R52      CG331       HGA3
+   36    21    37	5 ;       HGA3      CG331       HGA3
+   36    21    38	5 ;       HGA3      CG331       HGA3
+   37    21    38	5 ;       HGA3      CG331       HGA3
+
+[ dihedrals ]
+;	ai	  aj	ak	  al funct			  c0			c1			  c2			c3			  c4			c5
+    1     2     3    22	 9 ;      OG2D1      CG2O2      OG311       HGP1
+    4     2     3    22	 9 ;     CG2R61      CG2O2      OG311       HGP1
+    1     2     4     6	 9 ;      OG2D1      CG2O2     CG2R61     CG2R61
+    1     2     4     5	 9 ;      OG2D1      CG2O2     CG2R61     CG2R61
+    3     2     4     6	 9 ;      OG311      CG2O2     CG2R61     CG2R61
+    3     2     4     5	 9 ;      OG311      CG2O2     CG2R61     CG2R61
+    2     4     6    24	 9 ;      CG2O2     CG2R61     CG2R61      HGR61
+    2     4     6     7	 9 ;      CG2O2     CG2R61     CG2R61     CG2R61
+    5     4     6    24	 9 ;     CG2R61     CG2R61     CG2R61      HGR61
+    5     4     6     7	 9 ;     CG2R61     CG2R61     CG2R61     CG2R61
+    6     4     5    23	 9 ;     CG2R61     CG2R61     CG2R61      HGR61
+    6     4     5    10	 9 ;     CG2R61     CG2R61     CG2R61     CG2R61
+    2     4     5    23	 9 ;      CG2O2     CG2R61     CG2R61      HGR61
+    2     4     5    10	 9 ;      CG2O2     CG2R61     CG2R61     CG2R61
+    4     5    10     8	 9 ;     CG2R61     CG2R61     CG2R61     CG2R66
+    4     5    10    11	 9 ;     CG2R61     CG2R61     CG2R61      OG301
+   23     5    10     8	 9 ;      HGR61     CG2R61     CG2R61     CG2R66
+   23     5    10    11	 9 ;      HGR61     CG2R61     CG2R61      OG301
+    4     6     7    25	 9 ;     CG2R61     CG2R61     CG2R61      HGR62
+    4     6     7     8	 9 ;     CG2R61     CG2R61     CG2R61     CG2R66
+   24     6     7    25	 9 ;      HGR61     CG2R61     CG2R61      HGR62
+   24     6     7     8	 9 ;      HGR61     CG2R61     CG2R61     CG2R66
+    6     7     8     9	 9 ;     CG2R61     CG2R61     CG2R66       FGR1
+    6     7     8    10	 9 ;     CG2R61     CG2R61     CG2R66     CG2R61
+   25     7     8     9	 9 ;      HGR62     CG2R61     CG2R66       FGR1
+   25     7     8    10	 9 ;      HGR62     CG2R61     CG2R66     CG2R61
+    7     8    10     5	 9 ;     CG2R61     CG2R66     CG2R61     CG2R61
+    7     8    10    11	 9 ;     CG2R61     CG2R66     CG2R61      OG301
+    9     8    10     5	 9 ;       FGR1     CG2R66     CG2R61     CG2R61
+    9     8    10    11	 9 ;       FGR1     CG2R66     CG2R61      OG301
+    8    10    11    12	 9 ;     CG2R66     CG2R61      OG301      CG321
+    5    10    11    12	 9 ;     CG2R61     CG2R61      OG301      CG321
+   10    11    12    26	 9 ;     CG2R61      OG301      CG321       HGA2
+   10    11    12    27	 9 ;     CG2R61      OG301      CG321       HGA2
+   10    11    12    13	 9 ;     CG2R61      OG301      CG321      CG321
+   11    12    13    28	 9 ;      OG301      CG321      CG321       HGA2
+   11    12    13    29	 9 ;      OG301      CG321      CG321       HGA2
+   11    12    13    14	 9 ;      OG301      CG321      CG321      CG321
+   26    12    13    28	 9 ;       HGA2      CG321      CG321       HGA2
+   26    12    13    29	 9 ;       HGA2      CG321      CG321       HGA2
+   26    12    13    14	 9 ;       HGA2      CG321      CG321      CG321
+   27    12    13    28	 9 ;       HGA2      CG321      CG321       HGA2
+   27    12    13    29	 9 ;       HGA2      CG321      CG321       HGA2
+   27    12    13    14	 9 ;       HGA2      CG321      CG321      CG321
+   12    13    14    30	 9 ;      CG321      CG321      CG321       HGA2
+   12    13    14    31	 9 ;      CG321      CG321      CG321       HGA2
+   12    13    14    15	 9 ;      CG321      CG321      CG321     CG2R51
+   28    13    14    30	 9 ;       HGA2      CG321      CG321       HGA2
+   28    13    14    31	 9 ;       HGA2      CG321      CG321       HGA2
+   28    13    14    15	 9 ;       HGA2      CG321      CG321     CG2R51
+   29    13    14    30	 9 ;       HGA2      CG321      CG321       HGA2
+   29    13    14    31	 9 ;       HGA2      CG321      CG321       HGA2
+   29    13    14    15	 9 ;       HGA2      CG321      CG321     CG2R51
+   13    14    15    16	 9 ;      CG321      CG321     CG2R51     CG2R51
+   13    14    15    20	 9 ;      CG321      CG321     CG2R51     CG2R52
+   30    14    15    16	 9 ;       HGA2      CG321     CG2R51     CG2R51
+   30    14    15    20	 9 ;       HGA2      CG321     CG2R51     CG2R52
+   31    14    15    16	 9 ;       HGA2      CG321     CG2R51     CG2R51
+   31    14    15    20	 9 ;       HGA2      CG321     CG2R51     CG2R52
+   14    15    16    17	 9 ;      CG321     CG2R51     CG2R51      CG331
+   14    15    16    18	 9 ;      CG321     CG2R51     CG2R51     NG2R51
+   20    15    16    17	 9 ;     CG2R52     CG2R51     CG2R51      CG331
+   20    15    16    18	 9 ;     CG2R52     CG2R51     CG2R51     NG2R51
+   14    15    20    19	 9 ;      CG321     CG2R51     CG2R52     NG2R50
+   14    15    20    21	 9 ;      CG321     CG2R51     CG2R52      CG331
+   16    15    20    19	 9 ;     CG2R51     CG2R51     CG2R52     NG2R50
+   16    15    20    21	 9 ;     CG2R51     CG2R51     CG2R52      CG331
+   15    16    17    32	 9 ;     CG2R51     CG2R51      CG331       HGA3
+   15    16    17    33	 9 ;     CG2R51     CG2R51      CG331       HGA3
+   15    16    17    34	 9 ;     CG2R51     CG2R51      CG331       HGA3
+   18    16    17    32	 9 ;     NG2R51     CG2R51      CG331       HGA3
+   18    16    17    33	 9 ;     NG2R51     CG2R51      CG331       HGA3
+   18    16    17    34	 9 ;     NG2R51     CG2R51      CG331       HGA3
+   17    16    18    35	 9 ;      CG331     CG2R51     NG2R51       HGP1
+   17    16    18    19	 9 ;      CG331     CG2R51     NG2R51     NG2R50
+   15    16    18    35	 9 ;     CG2R51     CG2R51     NG2R51       HGP1
+   15    16    18    19	 9 ;     CG2R51     CG2R51     NG2R51     NG2R50
+   16    18    19    20	 9 ;     CG2R51     NG2R51     NG2R50     CG2R52
+   35    18    19    20	 9 ;       HGP1     NG2R51     NG2R50     CG2R52
+   18    19    20    21	 9 ;     NG2R51     NG2R50     CG2R52      CG331
+   18    19    20    15	 9 ;     NG2R51     NG2R50     CG2R52     CG2R51
+   19    20    21    36	 9 ;     NG2R50     CG2R52      CG331       HGA3
+   19    20    21    37	 9 ;     NG2R50     CG2R52      CG331       HGA3
+   19    20    21    38	 9 ;     NG2R50     CG2R52      CG331       HGA3
+   15    20    21    36	 9 ;     CG2R51     CG2R52      CG331       HGA3
+   15    20    21    37	 9 ;     CG2R51     CG2R52      CG331       HGA3
+   15    20    21    38	 9 ;     CG2R51     CG2R52      CG331       HGA3
+
+[ dihedrals ]
+;	ai	  aj	ak	  al funct			  c0			c1			  c2			c3
+    2     4     1     3	 2
+

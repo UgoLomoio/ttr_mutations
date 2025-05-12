@@ -1,0 +1,24 @@
+Script to perform molecular docking with DiffDock and AutoDock-Vina 
+Contains also scripts to generate ligands using DiffSBDD 
+
+To use the following scripts, clone and install the following third-part repositories:
+ 
+- DiffDock, https://github.com/gcorso/DiffDock. 
+- DiffSBDD, https://github.com/arneschneuing/DiffSBDD
+- AutoDock-Vina, https://github.com/ccsb-scripps/AutoDock-Vina
+
+DiffSBDD and DiffDock may need two different conda enviroments to work.
+
+If you prefer to use cloud solutions for molecular docking using DiffDock, a script "docking_diffdock.py" that uses NVIDIA NIM is also available. Remember to insert your own APIKEY.
+
+
+Scripts:
+
+- optimize_ligand.py, optimize an existing ligand to increase binding affinity of the ligand with a specified mutant;
+- generate_ligand.py, generate an ex-novo ligand that optimally binds with the protein in a specified region;
+- dock_ligands.py, uses DiffDock and autodock vina installed locally and performs molecular binding;
+- docking_diffdock.py, uses DiffDock from NVIDIA NIM cloud. Requires connection to the internet and a valid NVIDIA NIM APIKEY;
+- docking_plot.py, create plots to visualize binding affinities and confidence scores. Can be used only after molecular docking is performed.
+- visualize_docked_structures.py, visualizes docking poses for a specified protein mutant and a specified ligand using the PyMOL python library.
+
+

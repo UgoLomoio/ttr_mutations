@@ -1,0 +1,1 @@
+python generate_ligands.py checkpoints/crossdocked_fullatom_cond.ckpt --pdbfile pdb/WT.pdb --outfile sdf/WT_t4.sdf --ref_ligand A:5 --n_samples 10
