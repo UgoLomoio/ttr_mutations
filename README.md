@@ -7,9 +7,7 @@ Anaconda3
 
 Trajectories:
 
-Trajectory files for V50M mutant are available at: 
-                
-                [https://10.5281/zenodo.16167909](https://doi.org/10.5281/zenodo.16167909)
+Trajectory files for V50M mutant are available at: [https://10.5281/zenodo.16167909](https://doi.org/10.5281/zenodo.16167909)
 
 Put them inside the "ttr_mutations/molecular_dynamics/trajectories" directory
 
