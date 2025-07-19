@@ -1,8 +1,13 @@
 Requirements:
 
-Operative System: Linux, MACOS, maybe Windows (?)
-Python 3.9
+Operative System: Linux, MACOS and Windows (not tested)
+Python 3.10.16
 Anaconda3
+
+Trajectories:
+
+Trajectory files for V50M mutant are available at: 10.5281/zenodo.16167909
+Put them inside the "ttr_mutations/molecular_dynamics/trajectories" directory
 
 
 Installation:
@@ -11,9 +16,9 @@ Installation:
     https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html
 
 
-2. Create a new conda enviroment called "ttr" with Python 3.10:
+2. Create a new conda enviroment called "ttr" with Python 3.10.16:
 
-    conda create -n ttr python=3.9
+    conda create -n ttr python=3.10.16
 
     Before Installing AutoDock Vina on windows:
 
@@ -91,7 +96,7 @@ Create Mutated structures:
 
 1. python generate_fasta.py
 2. python generate_json.py 
-3. Manual step: Use json_jobs to obtain Structures using AlphaFold Server (Beta). or automatic step using "python generate_structure.py" (needs alphafold3 inference code available on github and good hardware)
+3. Manual step: Use json_jobs to obtain Structures using AlphaFold Server (Beta). or automatic step using "python generate_structure.py" (needs alphafold3 inference code available on github)
 4. python popolate_cifs.py
 5. python cif2pdb.py
 6. python rename_pdbs.py
@@ -133,7 +138,8 @@ Needs GROMACS installed, GPU compatibility is recommended.
 
 1. cd molecular_dynamics
 2. python molecular_dynamics_proteinstability.py (Needs Gromacs, performs automatically all the steps of topology preparation, computes trajectories and create plots)
-3. visualize_trajectories.ipynb, a notebook that can be opened with jupyterlab that visualizes trajectories and creates final plots.
+3. create_plots.ipynb, a notebook that can be opened with jupyterlab that visualizes trajectories and creates final plots.
+4. visualize_trajectory.py, can be used to visualize a trajectory directly on pymol
 
 
 TMAlign:
