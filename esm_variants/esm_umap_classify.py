@@ -49,7 +49,7 @@ def getembfromnpz(npz_file, filename="embeddings.npy"):
 
 def get_embeddings(fasta_file):
     
-    key = "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"#os.getenv("NGC_API_KEY") or input("Paste the Run Key: ")
+    key = os.getenv("NGC_API_KEY") or input("Paste the Run Key: ")
 
     with open(fasta_sequences_path + sep + fasta_file) as file:
         lines = file.readlines()
